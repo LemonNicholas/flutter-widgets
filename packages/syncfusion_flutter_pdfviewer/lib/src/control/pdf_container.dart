@@ -924,7 +924,7 @@ class PdfContainerState extends State<PdfContainer>
     final keyedSubTree = KeyedSubtree(
       key: _childKey,
       child: Center(
-          child: Column(
+          child: Row(
               children: List.generate(widget.pdfController.pageCount,
                   (index) => widget.itemBuilder(context, index)).toList())),
     );
